@@ -1,5 +1,8 @@
 In Rust, the `Debug` trait allows you to format your types using the `{:?}` formatter, making it easier to inspect and debug your code. Instead of manually implementing the `Debug` trait for every struct, Rust provides the convenient `#[derive(Debug)]` attribute to automatically generate a `Debug` implementation.
 
+The `{:?}` formatter lets us print out and look at a struct without having to print out each attribute.
+like this: `println!("{:?}", point);`, Prints: `Point { x: 5.0, y: -3.2 }`
+
 For this challenge, you will work with structs that represent different types of data. Your task is to implement the `Debug` trait using the `derive` macro and demonstrate its functionality with sample structs.
 
 ## Your Task
